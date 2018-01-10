@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.views.Insertpage">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot Title="Oyrenci Ekele">
+                <TableSection>
+                    <EntryCell LabelColor="Green" Label="Name" x:Name="txtName"></EntryCell>
+
+                    <EntryCell LabelColor="Green" Label="SurName" x:Name="txtSurname"></EntryCell>
+                    <ViewCell>
+                        <Button FontSize="20" Text="Add" TextColor="Red"  Clicked="oninsert"></Button>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

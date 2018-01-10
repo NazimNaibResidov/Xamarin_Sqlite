@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.ListPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="ekle" Activated="onmenuinsert" Order="Secondary" Priority="1"></ToolbarItem>
+        <ToolbarItem Name="list" Order="Secondary" Priority="2"></ToolbarItem>
+          
+            
+        
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lst" ItemsSource="{Binding .}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell TextColor="Green"  Text="{Binding Name}" Detail="{Binding SurName}" >
+                            
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
